@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/estilos.css')}}">
+    
+</head>
+<body>    
+    <!--<div class="fondo" style="background-image: url({{ url_for('static', filename='img/fondo.jpg') }})" width:"100%" height="100vh"></div>-->
+    <div class="row bg-img">
+        <div class="col-auto">
+            <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                  <span class="fs-4">Sidebar</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link link-dark">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link link-dark">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                      Orders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link link-dark">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                      Products
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link link-dark">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                      Customers
+                    </a>
+                  </li>
+                </ul>
+                <hr>
+                <div class="dropdown">
+                  <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>mdo</strong>
+                  </a>
+                  <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <div class="col-auto">
+            <div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú de opciones</a>
+                          <ul class="dropdown-menu">
+                            
+                          </ul>
+                        </li>
+                      </ul>
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            
+              <div>
+                  <form class="row g-3 needs-validation" novalidate>
+                      <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Nombre(s)</label>
+                        <input class="form-control me-2" type="text" placeholder="Nombre(s)" aria-label="Nombre(s)">
+                        <div class="valid-feedback">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Apellidos</label>
+                        <input class="form-control me-2" type="text" placeholder="Apellidos" aria-label="Apellidos">
+                        <div class="valid-feedback">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Correo electronico</label>
+                        <div class="input-group has-validation">
+                          <input class="form-control me-2" type="text" placeholder="Correo electronico" aria-label="Correo electronico">
+                          <div class="invalid-feedback">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                          Proporcione una ciudad válida.
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Estado</label>
+                        <select class="form-select" id="validationCustom04" required>
+                          <option selected disabled value="">Elegir</option>
+                          <option>Aguascalientes</option>
+                          <option>Baja California</option>
+                          <option>Baja California Sur</option>
+                          <option>Campeche</option>
+                          <option>Chiapas</option>
+                          <option>Chihuahua</option>
+                          <option>Coahuila</option>
+                          <option>Colima</option>
+                          <option>Durango</option>
+                          <option>Estado de México</option>
+                          <option>Guanajuato</option>
+                          <option>Guerrero</option>
+                          <option>Hidalgo</option>
+                          <option>Jalisco</option>
+                          <option>Michoacán</option>
+                          <option>Morelos</option>
+                          <option>Nayarit</option>
+                          <option>Nuevo León</option>
+                          <option>Oaxaca</option>
+                          <option>Puebla</option>
+                          <option>Querétaro</option>
+                          <option>Quintana Roo</option>
+                          <option>San Luis Potosí</option>
+                          <option>Sinaloa</option>
+                          <option>Sonora</option>
+                          <option>Tabasco</option>
+                          <option>Tamaulipas</option>
+                          <option>Tlaxcala</option>
+                          <option>Veracruz</option>
+                          <option>Yucatán</option>
+                          <option>Zacatecas</option>
+                        </select>
+                        
+                        
+                      </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Acepto los términos y condiciones
+                          </label>
+                          <div class="invalid-feedback">
+                            Debes aceptar antes de enviar.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar formulario</button>
+                      </div>
+                    </form>
+              </div>
+            
+            
+            
+              <div>
+                <table class= "table table-striped-columns">
+                  <thead>
+                    <tr class="table-dark">
+                      <th class="table-dark" scope="col">#</th>
+                      <th class="table-dark" scope="col">Nombre</th>
+                      <th class="table-dark" scope="col">Apellido</th>
+                      <th class="table-dark" scope="col">Correo electronico</th>
+                      <th class="table-dark" scope="col">Ciudad</th>
+                      <th class="table-dark" scope="col" style="text-align: left;">Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-dark">
+                      <th class="table-dark" scope="row">1</th>
+                      <td class="table-dark">Armando</td>
+                      <td class="table-dark">Zuñiga Bermejo</td>
+                      <td class="table-dark">bermejoza@gmail.com</td>
+                      <td class="table-dark">Cholula</td>
+                      <td class="table-dark">Puebla</td>
+                      <td class="table-dark"><button type="button" class="btn btn-secondary" fdprocessedid="ncomj">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"></path>
+                        </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+                        <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                        </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                        <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+                        </svg>
+                      </button></td>
+                    </tr>
+                    <tr class="table-dark">
+                      <th class="table-dark" scope="row">2</th>
+                      <td class="table-dark">Andrea</td>
+                      <td class="table-dark">Tapia Vergara</td>
+                      <td class="table-dark">andyctv@gmail.com</td>
+                      <td class="table-dark">Izucar</td>
+                      <td class="table-dark">Puebla</td>
+                      <td class="table-dark"><button type="button" class="btn btn-secondary" fdprocessedid="ncomj">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"></path>
+                        </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+                        <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                        </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                        <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+                        </svg>
+                      </button></td>
+                    </tr>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+    </div>     
+    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+</body>
+</html>
